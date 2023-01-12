@@ -19,6 +19,6 @@ systemctl start openvpnas\n \
 tail -f /var/log/openvpnas.log\n \
 ' >> /entrypoint.sh
 
-EXPOSE 1194 443 943 945
+EXPOSE 1194 443 904-909 943 945
 
 ENTRYPOINT [ "bash", "/entrypoint.sh" ]
